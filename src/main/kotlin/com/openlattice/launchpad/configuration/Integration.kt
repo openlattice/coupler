@@ -22,7 +22,6 @@
 package com.openlattice.launchpad.configuration
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import java.util.*
 
 /**
  *
@@ -33,7 +32,7 @@ const val DESTINATION = "destination"
 
 
 data class Integration(
-        @JsonProperty(DESCRIPTION) val description : String = "",
+        @JsonProperty(DESCRIPTION) val description : String? = "",
         @JsonProperty(SOURCE) val source: String,
         @JsonProperty(DESTINATION) val destination: String,
         @JsonProperty("gluttony") val gluttony : Boolean = false

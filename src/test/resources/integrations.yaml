@@ -18,6 +18,8 @@ integrations:
     localdb:
       - source: "demo_justice"
         destination: demo_justice_OLcopy
+      - source: "demo_justice"
+        destination: demo_justice_OLcopy
         description: "Some other integration"
       - source: "( select * from demo_health where \"FirstName\" = 'Jennifer') dh"
         destination: demo_health_subset_OLcopy
